@@ -9,9 +9,100 @@ body {
     box-sizing: border-box;
 }
 
+nav {
+    display: flex;
+    background: transparent;
+    width: 100%;
+    height: 75px;
+    /* margin-top: -100px; */
+    position: fixed;
+}
+
+nav>.navbar {
+    display: flex;
+    flex: 1;
+}
+
+nav>.navbar {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+nav>.navbar>.item {
+    display: flex;
+    gap: 15px;
+    margin-left: 90px;
+}
+
+nav>.navbar>.item>div {
+    color: #FFF;
+    font-family: 'Sacramento', cursive;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+nav>.navbar>div>a {
+    color: #FFF;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 1px;
+    border-color: transparent;
+    border-style: solid;
+    padding-bottom: 5px;
+}
+
+nav>.navbar>div>a:hover {
+    border-color: #FF8906;
+}
+
+nav>form {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    gap: 20px;
+    align-items: center;
+    margin-right: 90px;
+}
+
+nav>form>.item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav>form>.transparan>button {
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    background: transparent;
+    color: #FFF;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 18px;
+    cursor: pointer;
+}
+
+nav>form>div>button {
+    border-radius: 5px;
+    background: #FF8906;
+    color: #0B132A;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 18px;
+    cursor: pointer;
+}
+
 /* section1 */
 #hero {
     display: flex;
+    /* margin-top: 100px; */
 }
 
 .hero1 {
@@ -399,6 +490,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* background-color: lightsalmon; */
 }
 
 #mapstore>.container {
@@ -447,5 +539,196 @@ body {
     font-weight: 400;
     text-align: center;
 }
+#mapstore>.map{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    /* background-color: lightcyan */
+}
+#mapstore>.map>img {
+    width: 70%;
+    margin-top: 20px;
+}
 
-#mapstore>.map {}
+#testimoni{
+    display: flex;
+    background: linear-gradient(168deg, #777C82 -114.74%, #0B0909 91.35%);
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+#testimoni>.wrapper{
+    display: flex;
+    width: 70%;
+    gap: 20px;
+}
+#testimoni>.wrapper>.image{}
+#testimoni>.wrapper>.image>img{}
+#testimoni>.wrapper>.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#testimoni>.wrapper>.container>.title{
+    color: #FFF;
+font-family: Plus Jakarta Sans;
+font-size: 16px;
+font-weight: 400;
+}
+#testimoni>.wrapper>.container>.name{
+    display: flex;
+    width: 400px;
+    gap: 10px;
+    /* background-color: lightblue; */
+}
+#testimoni>.wrapper>.container>.name>.line{
+    width: 7px;
+    height: 68px;
+    background: #FF8906;
+}
+#testimoni>.wrapper>.container>.name>.name1{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 48px;
+    font-weight: 500;
+}
+#testimoni>.wrapper>.container>.role{
+    color: #FF8906;
+font-family: Plus Jakarta Sans;
+font-size: 16px;
+font-weight: 400;
+}
+#testimoni>.wrapper>.container>.description{
+    color: #FFF;
+font-family: Plus Jakarta Sans;
+font-size: 16px;
+font-weight: 400;
+}
+#testimoni>.wrapper>.container>.review{
+    display: flex;
+    gap: 10px;
+}
+#testimoni>.wrapper>.container>.reviex>div{
+    color: #FFF;
+font-family: Plus Jakarta Sans;
+font-size: 16px;
+font-weight: 400;
+}
+#testimoni>.wrapper>.container>.arrow{
+    display: flex;
+}
+#testimoni>.wrapper>.container>.arrow{
+    display: flex;
+    gap: 10px;
+}
+#testimoni>.wrapper>.container>.arrow>div>button{
+    width: 45px;
+    height: 45px;
+    background: #FFF;
+    display: flex;
+    border-radius: 20px;
+    border-style: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#testimoni>.wrapper>.container>.arrow>.right>button{
+    /* transform: rotate(90deg); */
+    transform: rotate(180deg);
+}
+#testimoni>.wrapper>.container>.arrow>div>button:hover{
+    background: #FF8906;
+}
+#testimoni>.wrapper>.container>.line{
+    display: flex;
+
+}
+
+footer{
+    display: flex;
+    background: #F8F8F8;
+    /* background-color: lightblue; */
+    height: 50vh;
+    margin-top: 100px;
+    padding-top: 50px;
+    justify-content: space-around;
+
+}
+footer>.container{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    gap: 25px;
+    /* background-color: lightcoral; */
+}
+footer>.container>.title{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+footer>.container>.title>div{
+    color: #8E6447;
+    font-family: 'Sacramento', cursive;
+    font-size: 20px;
+    font-weight: 400;
+}
+footer>.container>div{
+    color: #4F5665;
+font-family: Plus Jakarta Sans;
+font-size: 16px;
+font-weight: 400;
+}
+footer>.container>.copyright{
+    color: #AFB5C0;
+    font-family: 'Rubik', sans-serif;
+font-size: 16px;
+font-weight: 400;
+margin-top: 15px;
+}
+footer>.container1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* background-color: lightcoral; */
+}
+footer>.container1>.title{
+    color: #0B132A;
+font-family: Plus Jakarta Sans;
+font-size: 18px;
+font-weight: 500;
+margin-bottom: 10px;
+}
+footer>.container1>div>a{
+    text-decoration: none;
+    color: #4F5665;
+font-family: Plus Jakarta Sans;
+font-size: 16px;
+font-weight: 400;
+}
+footer>.container1>div>a:hover{
+    color:#FF8906;
+}
+footer>.container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+footer>.container2>.title{
+    color: #0B132A;
+font-family: Plus Jakarta Sans;
+font-size: 18px;
+font-weight: 500;
+margin-bottom: 10px;
+}
+footer>.container2>.box{
+    display: flex;
+}
+footer>.container2>div>a{
+    text-decoration: none;
+    color: #4F5665;
+font-family: Plus Jakarta Sans;
+font-size: 16px;
+font-weight: 400;
+}
