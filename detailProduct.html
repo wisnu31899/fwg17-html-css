@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Product</title>
+
+    <link rel="stylesheet" href="./asset/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        @media screen and (max-width: 500px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            #detailSatu>div {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            #detailSatu>div>aside>img {
+                max-width: 350px;
+            }
+
+            #detailSatu>div>aside>div>img {
+                width: 100px;
+            }
+
+            #detailDua>aside>.wrap {
+                display: flex;
+                flex-direction: column;
+                height: 1200px;
+            }
+
+            footer {
+                display: flex;
+                gap: 30px;
+                padding: 10px;
+            }
+
+            footer>.wrap2>.box {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <div>
+                <img src="./asset/icon/cangkir-kopi-putih.svg" alt="">
+                <span>Coffee Shop</span>
+            </div>
+            <div class="changePage">
+                <a href="/home.html">Home</a>
+                <a href="/product.html">Product</a>
+            </div>
+        </div>
+        <div class="search">
+            <img src="./asset/icon/Search.svg" alt="">
+            <img src="./asset/icon/ShoppingCart.svg" alt="">
+            <button><a href="./login.html">Sign In</a></button>
+            <button class="signup"><a href="/register.html">Sign Up</a></button>
+        </div>
+    </nav>
+    <section id="detailSatu">
+        <div>
+            <aside>
+                <img src="./asset/image/dphead1.png" alt="">
+                <div>
+                    <img src="./asset/image/dphead2.png" alt="">
+                    <img src="./asset/image/dphead3.png" alt="">
+                    <img src="./asset/image/dphead4.png" alt="">
+                </div>
+            </aside>
+            <article>
+                <span class="promo">FLASH SALE!</span>
+                <span class="title">Hazelnut Latte</span>
+                <div class="price">
+                    <div class="pay">IDR 20.000</div>
+                    <div class="pay1">IDR 10.000</div>
+                </div>
+                <div class="review">
+                    <img src="./asset/icon/Vector.svg" alt="">
+                    <img src="./asset/icon/Vector.svg" alt="">
+                    <img src="./asset/icon/Vector.svg" alt="">
+                    <img src="./asset/icon/Vector.svg" alt="">
+                    <img src="./asset/icon/Vector.svg" alt="">
+                    <span>5.0</span>
+                </div>
+                <div class="recommended">
+                    <span>200+ Review</span>
+                    <div class="line"></div>
+                    <span>Rekommendation</span>
+                    <div><img src="./asset/icon/ThumbsUp.svg" alt=""></div>
+                </div>
+                <span>
+                    Cold brewing is a method of brewing that combines ground coffee and cool water and uses time instead
+                    of heat to extract the flavor. It is brewed in small batches and steeped for as long as 48 hours.
+                </span>
+                <div class="quantity">
+                    <div class="img1"><img src="./asset/icon/minus.svg" alt=""></div>
+                    <div>1</div>
+                    <div class="img2"><img src="./asset/icon/plus.svg" alt=""></div>
+                </div>
+                <span class="size">Choose Size</span>
+                <div class="box">
+                    <button class="color" type="submit">Regular</button>
+                    <button type="submit">Medium</button>
+                    <button type="submit">Large</button>
+                </div>
+                <span class="variant">Hot/Ice?</span>
+                <div class="box">
+                    <button class="color" type="submit">Ice</button>
+                    <button type="submit">Hot</button>
+                </div>
+                <div class="box1">
+                    <button type="submit"><a href="/checkout.html">Buy</a></button>
+                    <button class="cart" type="submit"><a href="/checkout.html"><img
+                                src="./asset/icon/ShoppingCart-orange.svg" alt=""> add to cart</a></button>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="detailDua">
+        <aside>
+            <div class="title">Recommendation <span>For You</span></div>
+            <div class="wrap">
+                <div>
+                    <div class="img"><img src="./asset/image/sec2-box1.png" alt=""></div>
+                    <span>FLASH SALE!</span>
+                    <div class="card">
+                        <span class="title">Hazelnut Latte</span>
+                        <span>You can explore the menu that we provide with fun and have their own taste and
+                            make your day better</span>
+                        <span class="pay">IDR 20.000</span>
+                        <div class="button">
+                            <button class="color"><a href="/detailProduct.html">Buy</a></button>
+                            <button><a href="/detailProduct.html"><img src="./asset/icon/ShoppingCart-orange.svg"
+                                        alt=""></a></button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img"><img src="./asset/image/sec2-box2.png" alt=""></div>
+                    <div class="card">
+                        <span class="title">Hazelnut Latte</span>
+                        <span>You can explore the menu that we provide with fun and have their own taste and
+                            make your day better</span>
+                        <span class="pay">IDR 20.000</span>
+                        <div class="button">
+                            <button class="color"><a href="/detailProduct.html">Buy</a></button>
+                            <button><a href="/detailProduct.html"><img src="./asset/icon/ShoppingCart-orange.svg"
+                                        alt=""></a></button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img"><img src="./asset/image/sec2-box2.png" alt=""></div>
+                    <span>FLASH SALE!</span>
+                    <div class="card">
+                        <span class="title">Hazelnut Latte</span>
+                        <span>You can explore the menu that we provide with fun and have their own taste and
+                            make your day better</span>
+                        <span class="pay">IDR 20.000</span>
+                        <div class="button">
+                            <button class="color"><a href="/detailProduct.html">Buy</a></button>
+                            <button><a href="/detailProduct.html"><img src="./asset/icon/ShoppingCart-orange.svg"
+                                        alt=""></a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button class="arrowLeft"><img src="./asset/icon/arrow-left.svg" alt=""></button>
+                <button class="pagination1">1</button>
+                <button class="pagination">2</button>
+                <button class="pagination1">3</button>
+                <button class="pagination">4</button>
+                <button class="arrowRight"><img src="./asset/icon/arrow-right.svg" alt=""></button>
+            </div>
+        </aside>
+    </section>
+    <footer>
+        <div class="wrap">
+            <div class="title">
+                <img src="./asset/icon/cangkir-kopi-coklat.svg" alt="">
+                <div>Coffee Shop</div>
+            </div>
+            <div>Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans
+            </div>
+            <div class="copyright">©2020CoffeeStore</div>
+        </div>
+        <div class="wrap1">
+            <div class="title">Product</div>
+            <div><a href="#">Our Product</a></div>
+            <div><a href="#">Pricing</a></div>
+            <div><a href="#">Locations</a></div>
+            <div><a href="#">Countries</a></div>
+            <div><a href="#">Blog</a></div>
+        </div>
+        <div class="wrap1">
+            <div class="title">Engage</div>
+            <div><a href="#">Patner</a></div>
+            <div><a href="#">FAQ</a></div>
+            <div><a href="#">About Us</a></div>
+            <div><a href="#">Privacy Policy</a></div>
+            <div><a href="#">Terms of Service</a></div>
+        </div>
+        <div class="wrap2">
+            <div class="title">Social Media</div>
+            <div class="box">
+                <div><a href="#"><img src="./asset/icon/Facebook1.svg" alt=""></a></div>
+                <div><a href="#"><img src="./asset/icon/Twitter.svg" alt=""></a></div>
+                <div><a href="#"><img src="./asset/icon/Instagram.svg" alt=""></a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

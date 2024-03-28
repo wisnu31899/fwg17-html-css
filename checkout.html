@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Product</title>
+
+    <link rel="stylesheet" href="./asset/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        @media screen and (max-width: 500px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            #checkoutSatu>div>div {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            #checkoutSatu>div>div>.detail>.card {
+                gap: 5px;
+            }
+
+            #checkoutSatu>div>div>.detail>.card>.image>img {
+                width: 100px;
+            }
+
+            #checkoutSatu>div>div>.detail>.card>div>.wraping {
+                gap: 5px;
+            }
+
+            #checkoutSatu>div>div>.detail>.card>.x {
+                padding-left: 0px;
+            }
+
+            #checkoutSatu>div>div>.pay {
+                width: 350px;
+            }
+
+            #checkoutDua>aside {
+                width: 70%;
+                margin-left: 50px;
+            }
+
+            footer {
+                display: flex;
+                gap: 30px;
+                padding: 10px;
+            }
+
+            footer>.wrap2>.box {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <div>
+                <img src="./asset/icon/cangkir-kopi-putih.svg" alt="">
+                <span>Coffee Shop</span>
+            </div>
+            <div class="changePage">
+                <a href="/home.html">Home</a>
+                <a href="/product.html">Product</a>
+            </div>
+        </div>
+        <div class="search">
+            <img src="./asset/icon/Search.svg" alt="">
+            <img src="./asset/icon/ShoppingCart.svg" alt="">
+            <button><a href="./login.html">Sign In</a></button>
+            <button class="signup"><a href="/register.html">Sign Up</a></button>
+        </div>
+    </nav>
+    <section id="checkoutSatu">
+        <div>
+            <span>Payment Details</span>
+            <div>
+                <aside class="detail">
+                    <div class="menu">
+                        <span>Your Order</span>
+                        <button><a href="/product.html"><img src="./asset/icon/plus.svg" alt="">Add Menu</a></button>
+                    </div>
+                    <div class="card">
+                        <div class="image"><img src="./asset/image/dphead1.png" alt=""></div>
+                        <div>
+                            <span class="promo">FLASH SALE!</span>
+                            <span>Hazelnut Latte</span>
+                            <div class="wraping">
+                                <span>2pcs</span>
+                                <div></div>
+                                <span>Regular</span>
+                                <div></div>
+                                <span>Ice</span>
+                                <div></div>
+                                <span>Dine In</span>
+                            </div>
+                            <div class="price">
+                                <div class="pay">IDR 20.000</div>
+                                <div class="pay1">IDR 10.000</div>
+                            </div>
+                        </div>
+                        <div class="x"><img src="./asset/icon/XCircle.svg" alt=""></div>
+                    </div>
+                    <div class="card">
+                        <div class="image"><img src="./asset/image/dphead1.png" alt=""></div>
+                        <div>
+                            <span class="promo">FLASH SALE!</span>
+                            <span>Hazelnut Latte</span>
+                            <div class="wraping">
+                                <span>2pcs</span>
+                                <div></div>
+                                <span>Regular</span>
+                                <div></div>
+                                <span>Ice</span>
+                                <div></div>
+                                <span>Dine In</span>
+                            </div>
+                            <div class="price">
+                                <div class="pay">IDR 20.000</div>
+                                <div class="pay1">IDR 10.000</div>
+                            </div>
+                        </div>
+                        <div class="x"><img src="./asset/icon/XCircle.svg" alt=""></div>
+                    </div>
+                </aside>
+                <aside class="pay">
+                    <span>Total</span>
+                    <div>
+                        <div>
+                            <div>Order</div>
+                            <span>Idr 40.000</span>
+                        </div>
+                        <div>
+                            <div>Delivery</div>
+                            <span>Idr 0</span>
+                        </div>
+                        <div>
+                            <div>Tax</div>
+                            <span>Idr 4.000</span>
+                        </div>
+                        <div class="line"></div>
+                        <div>
+                            <div>Sub Total</div>
+                            <span>Idr 44.000</span>
+                        </div>
+                        <button><a href="/history.html">Checkout</a></button>
+                        <span>We Accept</span>
+                        <div>
+                            <img src="./asset/icon/BRI.svg" alt="">
+                            <img src="./asset/icon/DANA.png" alt="">
+                            <img src="./asset/icon/BCA.svg" alt="">
+                            <img src="./asset/icon/GOPAY.svg" alt="">
+                            <img src="./asset/icon/OVO.svg" alt="">
+                            <img src="./asset/icon/PAYPAL.svg" alt="">
+                        </div>
+                        <span>*Get Discount if you pay with Bank Central Asia</span>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <section id="checkoutDua">
+        <aside>
+            <span>Payment Info & Delivery</span>
+            <form action="">
+                <label for="email">
+                    <span>Email</span>
+                    <div>
+                        <img class="img1" src="./asset/icon/mail.svg" alt="">
+                        <input type="text" name="email" id="email" placeholder="Enter Your Email">
+                    </div>
+                </label>
+                <label for="fullname">
+                    <span>Full Name</span>
+                    <div>
+                        <img class="img1" src="./asset/icon/Profile.svg" alt="">
+                        <input type="text" name="fullname" id="fullname" placeholder="Enter Your Full Name">
+                    </div>
+                </label>
+                <label for="address">
+                    <span>Address</span>
+                    <div>
+                        <img class="img1" src="./asset/icon/Location.svg" alt="">
+                        <input type="text" name="address" id="address" placeholder="Enter Your Full Name">
+                    </div>
+                </label>
+                <div>
+                    <button class="color">Dine in</button>
+                    <button>Door Delivery</button>
+                    <button>Pick Up</button>
+                </div>
+            </form>
+        </aside>
+    </section>
+    <footer>
+        <div class="wrap">
+            <div class="title">
+                <img src="./asset/icon/cangkir-kopi-coklat.svg" alt="">
+                <div>Coffee Shop</div>
+            </div>
+            <div>Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans
+            </div>
+            <div class="copyright">©2020CoffeeStore</div>
+        </div>
+        <div class="wrap1">
+            <div class="title">Product</div>
+            <div><a href="#">Our Product</a></div>
+            <div><a href="#">Pricing</a></div>
+            <div><a href="#">Locations</a></div>
+            <div><a href="#">Countries</a></div>
+            <div><a href="#">Blog</a></div>
+        </div>
+        <div class="wrap1">
+            <div class="title">Engage</div>
+            <div><a href="#">Patner</a></div>
+            <div><a href="#">FAQ</a></div>
+            <div><a href="#">About Us</a></div>
+            <div><a href="#">Privacy Policy</a></div>
+            <div><a href="#">Terms of Service</a></div>
+        </div>
+        <div class="wrap2">
+            <div class="title">Social Media</div>
+            <div class="box">
+                <div><a href="#"><img src="./asset/icon/Facebook1.svg" alt=""></a></div>
+                <div><a href="#"><img src="./asset/icon/Twitter.svg" alt=""></a></div>
+                <div><a href="#"><img src="./asset/icon/Instagram.svg" alt=""></a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

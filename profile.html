@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <link rel="stylesheet" href="./asset/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        @media screen and (max-width: 500px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            #profile>div>div {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            footer {
+                display: flex;
+                gap: 30px;
+                padding: 10px;
+            }
+
+            footer>.wrap2>.box {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <div>
+                <img src="./asset/icon/cangkir-kopi-putih.svg" alt="">
+                <span>Coffee Shop</span>
+            </div>
+            <div class="changePage">
+                <a href="/home.html">Home</a>
+                <a href="/product.html">Product</a>
+            </div>
+        </div>
+        <div class="search">
+            <img src="./asset/icon/Search.svg" alt="">
+            <img src="./asset/icon/ShoppingCart.svg" alt="">
+            <button><a href="./login.html">Sign In</a></button>
+            <button class="signup"><a href="/register.html">Sign Up</a></button>
+        </div>
+    </nav>
+    <section id="profile">
+        <div>
+            <span>Profile</span>
+            <div>
+                <form action="" class="image">
+                    <span class="name">Ghaluh Wizard</span>
+                    <span>ghaluhwizz@gmail.com</span>
+                    <div><img src="./asset/icon/exam-profile.svg" alt=""></div>
+                    <button>Upload New Photo</button>
+                    <span>Since 20 January 2022</span>
+                </form>
+                <form action="" class="text">
+                    <label for="fullname">
+                        <span>Full Name</span>
+                        <div>
+                            <img class="img1" src="./asset/icon/Profile.svg" alt="">
+                            <input type="text" name="fullname" id="fullname" placeholder="Ghaluh Wizard">
+                        </div>
+                    </label>
+                    <label for="email">
+                        <span>Email</span>
+                        <div>
+                            <img class="img1" width="15px" src="./asset/icon/phone-call.svg" alt="">
+                            <input type="text" name="email" id="email" placeholder="ghaluhwizz@gmail.com">
+                        </div>
+                    </label>
+                    <label for="phone">
+                        <span>Phone</span>
+                        <div>
+                            <img class="img1" src="./asset/icon/mail.svg" alt="">
+                            <input type="text" name="phone" id="phone" placeholder="082116304338">
+                        </div>
+                    </label>
+                    <a href="/forgotPassword.html">Set New Password</a>
+                    <label for="password">
+                        <span>Password</span>
+                        <div>
+                            <img class="img1" src="./asset/icon/Password.svg" alt="">
+                            <input type="password" name="password" id="password" placeholder="***************">
+                            <img class="eye" src="./asset/icon/EyeSlash.svg" alt="">
+                        </div>
+                    </label>
+                    <label for="address">
+                        <span>Address</span>
+                        <div>
+                            <img class="img1" src="./asset/icon/Location.svg" alt="">
+                            <input type="text" name="address" id="address" placeholder="Griya Bandung Indah">
+                        </div>
+                    </label>
+                    <button><a href="/login.html">Submit</a></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="wrap">
+            <div class="title">
+                <img src="./asset/icon/cangkir-kopi-coklat.svg" alt="">
+                <div>Coffee Shop</div>
+            </div>
+            <div>Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans
+            </div>
+            <div class="copyright">©2020CoffeeStore</div>
+        </div>
+        <div class="wrap1">
+            <div class="title">Product</div>
+            <div><a href="#">Our Product</a></div>
+            <div><a href="#">Pricing</a></div>
+            <div><a href="#">Locations</a></div>
+            <div><a href="#">Countries</a></div>
+            <div><a href="#">Blog</a></div>
+        </div>
+        <div class="wrap1">
+            <div class="title">Engage</div>
+            <div><a href="#">Patner</a></div>
+            <div><a href="#">FAQ</a></div>
+            <div><a href="#">About Us</a></div>
+            <div><a href="#">Privacy Policy</a></div>
+            <div><a href="#">Terms of Service</a></div>
+        </div>
+        <div class="wrap2">
+            <div class="title">Social Media</div>
+            <div class="box">
+                <div><a href="#"><img src="./asset/icon/Facebook1.svg" alt=""></a></div>
+                <div><a href="#"><img src="./asset/icon/Twitter.svg" alt=""></a></div>
+                <div><a href="#"><img src="./asset/icon/Instagram.svg" alt=""></a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

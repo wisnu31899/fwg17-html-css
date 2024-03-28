@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+
+    <link rel="stylesheet" href="./asset/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        @media screen and (max-width: 500px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            #productDua>main>.wrapCard {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            #productTiga>main>aside {
+                display: flex;
+                flex-direction: column;
+            }
+            #productTiga>main>aside>div>.wrapping {
+                display: flex;
+                flex-direction: column;
+            }
+            #productTiga>main>aside>div>.wrapping>.wrap {
+                display: flex;
+                flex-direction: column;
+                height: 870px;
+                margin-bottom: -150px;
+            }
+            #productTiga>main>aside>div>.button{
+                margin-top: 250px;
+            }
+
+            footer {
+                display: flex;
+                gap: 30px;
+                padding: 10px;
+            }
+
+            footer>.wrap2>.box {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <div>
+                <img src="./asset/icon/cangkir-kopi-putih.svg" alt="">
+                <span>Coffee Shop</span>
+            </div>
+            <div class="changePage">
+                <a href="/home.html">Home</a>
+                <a href="/product.html">Product</a>
+            </div>
+        </div>
+        <div class="search">
+            <img src="./asset/icon/Search.svg" alt="">
+            <img src="./asset/icon/ShoppingCart.svg" alt="">
+            <button><a href="./login.html">Sign In</a></button>
+            <button class="signup"><a href="/register.html">Sign Up</a></button>
+        </div>
+    </nav>
+    <section id="productSatu">
+        <main>
+                <span>We Provide Good Coffee And Healthy Meals</span>
+        </main>
+    </section>
+    <section id="productDua">
+        <main>
+            <div class="wrap">
+                <span>Today <div>Promo</div></span>
+                <div class="button">
+                    <button class="arrowLeft" ><img src="./asset/icon/arrow-left.svg" alt=""></button>
+                    <button class="arrowRight"><img src="./asset/icon/arrow-right.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="wrapCard">
+                <div class="card">
+                    <div><img src="./asset/image/ps1-1.png" alt=""></div>
+                    <div>
+                        <span class="title">HAPPY MOTHER'S DAY!</span>
+                        <span>Get on of our favorite menu for free</span>
+                        <a href="#">Klaim Kupon</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div><img src="./asset/image/ps1-1.png" alt=""></div>
+                    <div>
+                        <span class="title">HAPPY MOTHER'S DAY!</span>
+                        <span>Get on of our favorite menu for free</span>
+                        <a href="#">Klaim Kupon</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div><img src="./asset/image/ps1-1.png" alt=""></div>
+                    <div>
+                        <span class="title">HAPPY MOTHER'S DAY!</span>
+                        <span>Get on of our favorite menu for free</span>
+                        <a href="#">Klaim Kupon</a>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div><img src="./asset/image/ps1-2.png" alt=""></div>
+                    <div>
+                        <span class="title">Get a cup of coffee for free on sunday morning</span>
+                        <span>Only at 7 to 9 AM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="line">
+                <img src="./asset/icon/Group 1300.svg" alt="">
+            </div>
+        </main>
+    </section>
+    <section id="productTiga">
+        <main>
+            <div>Our <span>Product</span></div>
+            <aside>
+                <form action="">
+                    <label class="filter">
+                        <span>Filter</span>
+                        <button>Reset Filter</button>
+                    </label>
+                    <span>Search</span>
+                    <input type="text" placeholder="Search Your Product" name="search" id="search">
+                    <span>Category</span>
+                    <label>
+                        <input type="checkbox" name="favorite product" id="favorite product">
+                        <span>Favorite Product</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="coffee" id="coffee">
+                        <span>Coffee</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="non coffee" id="non coffee">
+                        <span>Non Coffee</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="food" id="food">
+                        <span>Food</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="add-on" id="add-on">
+                        <span>Add-On</span>
+                    </label>
+                    <span>Sort By</span>
+                    <label>
+                        <input type="checkbox" name="buy 1 get 1" id="buy 1 get 1">
+                        <span>Buy 1 get 1</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="flash sale" id="flash sale">
+                        <span>Flash sale</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="birthday package" id="birthday package">
+                        <span>Birthday package</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="cheap" id="cheap">
+                        <span>Cheap</span>
+                    </label>
+                    <label for="">
+                        <input type="range" id="harga_terendah" name="harga_terendah" min="0" max="1000">
+                        <input type="range" id="harga_tertinggi" name="harga_tertinggi" min="0" max="1000">
+                    </label>
+                    <button type="submit">Apply Filter</button>
+                </form>
+                <div>
+                    <div class="wrapping">
+                        <div class="wrap">
+                            <div>
+                                <div class="img"><img src="./asset/image/sec2-box1.png" alt=""></div>
+                                <span>FLASH SALE!</span>
+                                <div class="card">
+                                    <span class="title">Hazelnut Latte</span>
+                                    <span>You can explore the menu that we provide with fun and have their own taste and
+                                        make your day better</span>
+                                    <span class="pay">IDR 20.000</span>
+                                    <div class="button">
+                                        <button class="color"><a href="/detailProduct.html">Buy</a></button>
+                                        <button><a href="/detailProduct.html"><img src="./asset/icon/ShoppingCart-orange.svg"
+                                                    alt=""></a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="img"><img src="./asset/image/sec2-box2.png" alt=""></div>
+                                <div class="card">
+                                    <span class="title">Hazelnut Latte</span>
+                                    <span>You can explore the menu that we provide with fun and have their own taste and
+                                        make your day better</span>
+                                    <span class="pay">IDR 20.000</span>
+                                    <div class="button">
+                                        <button class="color"><a href="/detailProduct.html">Buy</a></button>
+                                        <button><a href="/detailProduct.html"><img src="./asset/icon/ShoppingCart-orange.svg"
+                                                    alt=""></a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <div>
+                                <div class="img"><img src="./asset/image/sec2-box3.png" alt=""></div>
+                                <span>FLASH SALE!</span>
+                                <div class="card">
+                                    <span class="title">Hazelnut Latte</span>
+                                    <span>You can explore the menu that we provide with fun and have their own taste and
+                                        make your day better</span>
+                                    <span class="pay">IDR 20.000</span>
+                                    <div class="button">
+                                        <button class="color"><a href="/detailProduct.html">Buy</a></button>
+                                        <button><a href="/detailProduct.html"><img src="./asset/icon/ShoppingCart-orange.svg"
+                                                    alt=""></a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="img"><img src="./asset/image/sec2-box4.png" alt=""></div>
+                                <div class="card">
+                                    <span class="title">Hazelnut Latte</span>
+                                    <span>You can explore the menu that we provide with fun and have their own taste and
+                                        make your day better</span>
+                                    <span class="pay">IDR 20.000</span>
+                                    <div class="button">
+                                        <button class="color"><a href="/detailProduct.html">Buy</a></button>
+                                        <button><a href="/detailProduct.html"><img src="./asset/icon/ShoppingCart-orange.svg"
+                                                    alt=""></a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <div>
+                                <div class="img"><img src="./asset/image/sec2-box1.png" alt=""></div>
+                                <span>FLASH SALE!</span>
+                                <div class="card">
+                                    <span class="title">Hazelnut Latte</span>
+                                    <span>You can explore the menu that we provide with fun and have their own taste and
+                                        make your day better</span>
+                                    <span class="pay">IDR 20.000</span>
+                                    <div class="button">
+                                        <button class="color"><a href="/detailProduct.html">Buy</a></button>
+                                        <button><a href="/detailProduct.html"><img src="./asset/icon/ShoppingCart-orange.svg"
+                                                    alt=""></a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="img"><img src="./asset/image/sec2-box2.png" alt=""></div>
+                                <div class="card">
+                                    <span class="title">Hazelnut Latte</span>
+                                    <span>You can explore the menu that we provide with fun and have their own taste and
+                                        make your day better</span>
+                                    <span class="pay">IDR 20.000</span>
+                                    <div class="button">
+                                        <button class="color"><a href="/detailProduct.html">Buy</a></button>
+                                        <button><a href="/detailProduct.html"><img src="./asset/icon/ShoppingCart-orange.svg"
+                                                    alt=""></a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button class="arrowLeft" ><img src="./asset/icon/arrow-left.svg" alt=""></button>
+                        <button class="pagination1" >1</button>
+                        <button class="pagination" >2</button>
+                        <button class="pagination1" >3</button>
+                        <button class="pagination" >4</button>
+                        <button class="arrowRight"><img src="./asset/icon/arrow-right.svg" alt=""></button>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </section>
+    <footer>
+        <div class="wrap">
+            <div class="title">
+                <img src="./asset/icon/cangkir-kopi-coklat.svg" alt="">
+                <div>Coffee Shop</div>
+            </div>
+            <div>Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans
+            </div>
+            <div class="copyright">©2020CoffeeStore</div>
+        </div>
+        <div class="wrap1">
+            <div class="title">Product</div>
+            <div><a href="#">Our Product</a></div>
+            <div><a href="#">Pricing</a></div>
+            <div><a href="#">Locations</a></div>
+            <div><a href="#">Countries</a></div>
+            <div><a href="#">Blog</a></div>
+        </div>
+        <div class="wrap1">
+            <div class="title">Engage</div>
+            <div><a href="#">Patner</a></div>
+            <div><a href="#">FAQ</a></div>
+            <div><a href="#">About Us</a></div>
+            <div><a href="#">Privacy Policy</a></div>
+            <div><a href="#">Terms of Service</a></div>
+        </div>
+        <div class="wrap2">
+            <div class="title">Social Media</div>
+            <div class="box">
+                <div><a href="#"><img src="./asset/icon/Facebook1.svg" alt=""></a></div>
+                <div><a href="#"><img src="./asset/icon/Twitter.svg" alt=""></a></div>
+                <div><a href="#"><img src="./asset/icon/Instagram.svg" alt=""></a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

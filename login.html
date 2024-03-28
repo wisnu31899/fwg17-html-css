@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="./asset/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        @media screen and (max-width: 500px) {
+    .bg-login {
+        display: none;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <section id="auth">
+        <aside class="bg-login"></aside>
+        <main>
+            <form action="">
+                <div class="title">
+                    <img src="./asset/icon/cangkir-kopi-coklat.svg" alt="">
+                    <span>Coffee Shop</span>
+                </div>
+                <div class="description">
+                    <span>Login</span>
+                    <div>Fill out the form correctly</div>
+                </div>
+                <label for="email">
+                    <span>Email</span>
+                    <div>
+                        <img class="img1" src="./asset/icon/mail.svg" alt="">
+                        <input type="text" name="email" id="email" placeholder="Enter Your Email">
+                    </div>
+                </label>
+                <label for="password">
+                    <span>Password</span>
+                    <div>
+                        <img class="img1" src="./asset/icon/Password.svg" alt="">
+                        <input type="password" name="password" id="password" placeholder="Enter Your password">
+                        <img class="eye" src="./asset/icon/EyeSlash.svg" alt="">
+                    </div>
+                </label>
+                <a href="/forgotPassword.html">Lupa Password?</a>
+                <button><a href="/home.html">Login</a></button>
+                <div>Not Have An Account?<a href="/register.html"> Register</a></div>
+                <div class="line">
+                    <div class="line1"></div>
+                    <span>or</span>
+                    <div class="line2"></div>
+                </div>
+                <div class="button">
+                    <button><img src="./asset/icon/facebook.svg" width="20px" alt="">Facebook</button>
+                    <button><img src="./asset/icon/google.svg" width="20px" alt="">Google</button>
+                </div>
+            </form>
+        </main>
+    </section>
+</body>
+
+</html>
